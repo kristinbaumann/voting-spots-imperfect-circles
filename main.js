@@ -12,7 +12,7 @@ const width = container.offsetWidth;
 //   width * 0.5 > window.innerHeight - 100
 //     ? window.innerHeight - 100
 //     : width * 0.5;
-const height = window.innerHeight - 100;
+const height = window.innerHeight * 0.85;
 console.log("window height", window.innerHeight);
 canvas
   .attr("width", width * devicePixelRatio)
