@@ -11,12 +11,8 @@ Details:
 ## Screenshots
 
 ![Screenshot of animated visualization, type distributed](./screenshots/screenshot_distributed.png)
+<video src="./screenshots/recording_short.mp4" width="100%"></video>
 Display option "distributed"
 
 ![Screenshot of animated visualization, type histogram](./screenshots/screenshot_histogram.png)
 Display option "histogram"
-
-## Video
-
-![Video of animated visualization](./screenshots/recording_short.mp4)
--+-+-+-+-
