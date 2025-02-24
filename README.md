@@ -15,3 +15,8 @@ Display option "distributed"
 
 ![Screenshot of animated visualization, type histogram](./screenshots/screenshot_histogram.png)
 Display option "histogram"
+
+## Video
+
+![Video of animated visualization](./screenshots/recording_short.mp4)
+-+-+-+-+-
