@@ -46,14 +46,14 @@ const numberOfVotes = Math.floor(numberOfValidVotes / percentageThatVoted);
 console.log("Number of votes", numberOfVotes);
 
 const data = [
-  { party: "SPD", percentage: 16.5 },
-  { party: "CDU/CSU", percentage: 28.6 },
-  { party: "Grüne", percentage: 12.1 },
-  { party: "FDP", percentage: 4.7 },
-  { party: "AfD", percentage: 20.5 },
+  { party: "SPD", percentage: 16.4 },
+  { party: "CDU/CSU", percentage: 28.5 },
+  { party: "Grüne", percentage: 11.6 },
+  { party: "FDP", percentage: 4.3 },
+  { party: "AfD", percentage: 20.8 },
   { party: "Linke", percentage: 8.7 },
-  { party: "BSW", percentage: 5.0 },
-  { party: "Andere", percentage: 3.9 },
+  { party: "BSW", percentage: 4.9 },
+  { party: "Andere", percentage: 4.5 },
 ];
 
 // calculate the votes for each party and add to data array
