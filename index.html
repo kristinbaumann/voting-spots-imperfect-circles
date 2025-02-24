@@ -3,50 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bundestagswahl 2025 Zweitstimmen Spots</title>
+    <title>Voting Spots - Imperfect Circles</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap"
       rel="stylesheet"
     />
-    <style>
-      html.voting-spots {
-        overflow: hidden;
-      }
-      #legend-note {
-        text-align: center;
-        font: 18px "Bad Script";
-        margin-bottom: 0;
-      }
-      #legend {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        align-items: center;
-        justify-content: center;
-      }
-      .legend-item {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        font: 14px "Bad Script";
-      }
-      .legend-color {
-        width: 20px;
-        height: 20px;
-        display: inline-block;
-        border-radius: 50%;
-      }
-      .legend-color-container {
-        display: flex;
-      }
-    </style>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div id="container"></div>
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="./main.js"></script>
+
+    <script src="./js/loadData.js"></script>
+    <script src="./js/setupScales.js"></script>
+    <script src="./js/setupCanvas.js"></script>
+    <script src="./js/drawImperfectCircle.js"></script>
+    <script src="./js/drawLegend.js"></script>
+    <script src="./js/drawCirclesDistributed.js"></script>
+    <script src="./js/drawCirclesHistogram.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

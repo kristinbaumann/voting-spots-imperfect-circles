@@ -1,0 +1,37 @@
+{
+    "validVotes": 49642087,
+    "results": [
+        {
+            "party": "SPD",
+            "percentage": 16.4
+        },
+        {
+            "party": "CDU/CSU",
+            "percentage": 28.5
+        },
+        {
+            "party": "Grüne",
+            "percentage": 11.6
+        },
+        {
+            "party": "FDP",
+            "percentage": 4.3
+        },
+        {
+            "party": "AfD",
+            "percentage": 20.8
+        },
+        {
+            "party": "Linke",
+            "percentage": 8.7
+        },
+        {
+            "party": "BSW",
+            "percentage": 4.9
+        },
+        {
+            "party": "Andere",
+            "percentage": 4.5
+        }
+    ]
+}

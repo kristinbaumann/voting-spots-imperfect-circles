@@ -1,0 +1,28 @@
+html.voting-spots {
+  overflow: hidden;
+}
+#legend {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font: 14px "Bad Script";
+}
+#legend-note {
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+}
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
