@@ -11,7 +11,9 @@ Details:
 ## Screenshots
 
 ![Screenshot of animated visualization, type distributed](./screenshots/screenshot_distributed.png)
-<video src="./screenshots/recording_short.mp4" width="100%"></video>
+
+https://github.com/user-attachments/assets/04ac024e-190d-4f0c-b4f4-a922bf559418
+
 Display option "distributed"
 
 ![Screenshot of animated visualization, type histogram](./screenshots/screenshot_histogram.png)
