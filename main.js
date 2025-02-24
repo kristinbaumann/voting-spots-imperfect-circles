@@ -2,7 +2,8 @@ const canvas = d3
   .select("#container")
   .append("canvas")
   //   .style("border", "1px solid gray")
-  .style("max-width", "100%");
+  .style("max-width", "100%")
+  .style("width", "100%");
 
 const container = document.querySelector("#container");
 const devicePixelRatio = window.devicePixelRatio || 1;
@@ -27,24 +28,14 @@ const margin = { top: 35, right: 35, bottom: 35, left: 35 };
 const context = canvas.node().getContext("2d");
 context.scale(devicePixelRatio, devicePixelRatio);
 
-// Daten für Zweitstimmen Bundestagswahl 2021
-// gültige Stimmen 46.298.387
-// CDU 8.774.920
-// SPD 11.901.558
-// AfD 4.809.233
-// FDP 5.291.013
-// Linke 2.255.864
-// Grüne 6.814.408
-// CSU 2.402.827
-// Andere Rest
-
 const numberVotesPerCircle = 10000;
 
-const percentageThatVoted = 0.83;
-const numberOfValidVotes = 46298387;
-const numberOfVotes = Math.floor(numberOfValidVotes / percentageThatVoted);
-console.log("Number of votes", numberOfVotes);
+const percentageThatVoted = 0.825;
+const numberOfValidVotes = 49642087;
+//const numberOfVotes = Math.floor(numberOfValidVotes / percentageThatVoted);
+//console.log("Number of votes", numberOfVotes);
 
+// Daten für Zweitstimmen Bundestagswahl 2025
 const data = [
   { party: "SPD", percentage: 16.4 },
   { party: "CDU/CSU", percentage: 28.5 },
@@ -58,13 +49,11 @@ const data = [
 
 // calculate the votes for each party and add to data array
 data.forEach((d) => {
-  d.votes = (numberOfVotes * d.percentage) / 100;
+  d.votes = (numberOfValidVotes * d.percentage) / 100;
 });
+console.log(data);
 
-const sumVotes = data.reduce(
-  (acc, d) => acc + (numberOfVotes * d.percentage) / 100,
-  0
-);
+const sumVotes = data.reduce((acc, d) => acc + d.votes, 0);
 const sumPercentage = data.reduce((acc, d) => acc + d.percentage, 0);
 console.log("Sum votes", sumVotes);
 console.log("Sum percentage", sumPercentage);
